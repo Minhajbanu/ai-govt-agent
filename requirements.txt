@@ -3,6 +3,8 @@ numpy
 scikit-learn
 pytesseract
 pillow
-streamlit
 fastapi
 uvicorn
+streamlit==1.31.1
+altair==4.2.2
+reportlab
