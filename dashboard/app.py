@@ -85,7 +85,7 @@ ocr_risk_notes = []
 if uploaded_image:
     #st.image(uploaded_image, caption="Uploaded Receipt", use_container_width=True)
     image = Image.open(uploaded_image)
-    st.image(image, caption="Uploaded Receipt", use_container_width=True)
+    st.image(image, caption="Uploaded Receipt")
 
     #extracted_text = extract_text_from_image(uploaded_image)
     extracted_text = extract_text_from_image(image)
