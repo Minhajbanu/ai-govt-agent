@@ -1,0 +1,4 @@
+Invoice Number: INV-1023
+Vendor: ABC Pvt Ltd
+Amount: 250000
+Note: Duplicate invoice detected

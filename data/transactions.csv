@@ -1,0 +1,6 @@
+transaction_id,vendor,amount,date,department
+TX001,ABC Pvt Ltd,250000,2024-05-10,Roads
+TX002,XYZ Pvt Ltd,120000,2024-05-11,Health
+TX003,ABC Pvt Ltd,250000,2024-05-10,Roads
+TX004,LMN Pvt Ltd,980000,2024-05-12,Water
+
