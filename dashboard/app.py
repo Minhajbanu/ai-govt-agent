@@ -9,6 +9,7 @@ sys.path.append(BASE_DIR)
 
 from ai_agent import run_ai_audit
 from reports.pdf_report import generate_pdf_report
+from PIL import Image
 
 
 from ocr.image_ocr import extract_text_from_image
@@ -82,9 +83,12 @@ image_df = None
 ocr_risk_notes = []
 
 if uploaded_image:
-    st.image(uploaded_image, caption="Uploaded Receipt", use_container_width=True)
+    #st.image(uploaded_image, caption="Uploaded Receipt", use_container_width=True)
+    image = Image.open(uploaded_image)
+    st.image(image, caption="Uploaded Receipt", use_container_width=True)
 
-    extracted_text = extract_text_from_image(uploaded_image)
+    #extracted_text = extract_text_from_image(uploaded_image)
+    extracted_text = extract_text_from_image(image)
 
     st.markdown("### 📝 Extracted OCR Text")
     st.text_area("OCR Output", extracted_text, height=200)
